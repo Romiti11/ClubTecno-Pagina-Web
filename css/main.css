@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.v1_2 {
+  width: 100%;
+  min-height: 100vh; /* Asegura que el contenedor cubra toda la altura de la pantalla */
+  background: rgba(255,255,255,1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.v1_3 {
+  width: 80%; /* Ajusta el tamaño en dispositivos móviles */
+  max-width: 512px; /* Limita el ancho máximo en desktop */
+  height: auto;
+  background: url("../images/v1_3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  margin-bottom: 32px; /* Añade espacio entre los elementos */
+}
+
+.v1_5 {
+  width: 80%; /* Ajusta el tamaño en dispositivos móviles */
+  max-width: 512px; /* Limita el ancho máximo en desktop */
+  height: 110px;
+  background: rgba(156,155,197,1);
+  opacity: 1;
+  margin-bottom: 32px;
+}
+
+.v1_6 {
+  width: 100%;
+  max-width: 437px;
+  color: rgba(0,212,182,1);
+  font-family: Inknut Antiqua;
+  font-weight: Regular;
+  font-size: 48px; /* Tamaño de fuente más pequeño para móviles */
+  text-align: center;
+  margin-top: -20px;
+}
+
+@media (min-width: 768px) {
+  .v1_3, .v1_5 {
+    width: 512px; /* Ajuste para tabletas y desktop */
+  }
+  
+  .v1_6 {
+    font-size: 64px; /* Tamaño de fuente mayor en pantallas grandes */
+    text-align: left;
+    margin-top: 0;
+  }
+}
