@@ -9,7 +9,7 @@ body {
 
 .v1_2 {
   width: 100%;
-  min-height: 100vh; /* Asegura que el contenedor cubra toda la altura de la pantalla */
+  min-height: 100vh;
   background: rgba(255,255,255,1);
   position: relative;
   overflow: hidden;
@@ -21,20 +21,20 @@ body {
 }
 
 .v1_3 {
-  width: 80%; /* Ajusta el tamaño en dispositivos móviles */
-  max-width: 512px; /* Limita el ancho máximo en desktop */
+  width: 80%;
+  max-width: 512px;
   height: auto;
   background: url("../images/v1_3.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
-  margin-bottom: 32px; /* Añade espacio entre los elementos */
+  margin-bottom: 32px;
 }
 
 .v1_5 {
-  width: 80%; /* Ajusta el tamaño en dispositivos móviles */
-  max-width: 512px; /* Limita el ancho máximo en desktop */
+  width: 80%;
+  max-width: 512px;
   height: 110px;
   background: rgba(156,155,197,1);
   opacity: 1;
@@ -47,18 +47,18 @@ body {
   color: rgba(0,212,182,1);
   font-family: Inknut Antiqua;
   font-weight: Regular;
-  font-size: 48px; /* Tamaño de fuente más pequeño para móviles */
+  font-size: 48px;
   text-align: center;
   margin-top: -20px;
 }
 
 @media (min-width: 768px) {
   .v1_3, .v1_5 {
-    width: 512px; /* Ajuste para tabletas y desktop */
+    width: 512px;
   }
   
   .v1_6 {
-    font-size: 64px; /* Tamaño de fuente mayor en pantallas grandes */
+    font-size: 64px;
     text-align: left;
     margin-top: 0;
   }
