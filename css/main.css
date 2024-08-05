@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+
+.v34_2 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v34_3 {
+  width: 335px;
+  height: 70px;
+  background: url("../images/v34_3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  overflow: hidden;
+}
+.v60_7 {
+  width: 100px;
+  height: 100px;
+  background: url("../images/v60_7.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 206px;
+  left: 66px;
+  overflow: hidden;
+}
+.v61_6 {
+  width: 100px;
+  height: 100px;
+  background: url("../images/v61_6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 354px;
+  left: 66px;
+  overflow: hidden;
+}
+.v61_3 {
+  width: 100%;
+  height: 317px;
+  background: rgba(156,155,197,0.30000001192092896);
+  opacity: 1;
+  position: absolute;
+  top: 707px;
+  left: 0px;
+}
+
+/* Estilos específicos para landscape en móviles */
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
+    .v34_2 {
+        height: auto; /* Ajusta la altura en landscape si es necesario */
+    }
+
+    .v34_3, .v60_7, .v61_6, .v61_3 {
+        /* Ajustes específicos si se necesitan */
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
