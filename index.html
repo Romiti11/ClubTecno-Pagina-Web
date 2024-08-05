@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/main.css" rel="stylesheet" />
     <title>Document</title>
     <style>
@@ -30,10 +30,27 @@
     </div>
 
     <div id="rotate-message">
-        <p>Please rotate your device to landscape mode for a better experience.</p>
+        <p>Por favor gire su pantalla para una mejor vista!</p>
     </div>
 
-    <!-- Incluir el archivo de script.js -->
-    <script src="./js/script.js"></script>
+    <script>
+        function checkOrientation() {
+            const content = document.getElementById('content');
+            const rotateMessage = document.getElementById('rotate-message');
+
+            if (window.innerHeight > window.innerWidth) {
+                // Si está en portrait, mostrar el mensaje
+                content.style.display = 'none';
+                rotateMessage.style.display = 'block';
+            } else {
+                // Si está en landscape, mostrar el contenido
+                content.style.display = 'block';
+                rotateMessage.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('resize', checkOrientation);
+        window.addEventListener('load', checkOrientation);
+    </script>
 </body>
 </html>
