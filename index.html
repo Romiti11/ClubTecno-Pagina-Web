@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="./css/main.css" rel="stylesheet" />
     <title>Document</title>
     <style>
@@ -29,8 +29,9 @@
         <div class="v61_3"></div>
     </div>
 
+    <!-- Mensaje para rotar pantalla -->
     <div id="rotate-message">
-        <p>Por favor gire su pantalla para una mejor vista!</p>
+        <p>Por favor gire su pantalla para una mejor visión!</p>
     </div>
 
     <script>
@@ -38,7 +39,9 @@
             const content = document.getElementById('content');
             const rotateMessage = document.getElementById('rotate-message');
 
-            if (window.innerHeight > window.innerWidth) {
+            const isPortrait = window.innerHeight > window.innerWidth || window.orientation === 0 || window.orientation === 180;
+
+            if (isPortrait) {
                 // Si está en portrait, mostrar el mensaje
                 content.style.display = 'none';
                 rotateMessage.style.display = 'block';
@@ -51,6 +54,7 @@
 
         window.addEventListener('resize', checkOrientation);
         window.addEventListener('load', checkOrientation);
+        window.addEventListener('orientationchange', checkOrientation);
     </script>
 </body>
 </html>
