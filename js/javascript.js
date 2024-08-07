@@ -20,3 +20,6 @@ function checkOrientation() {
 window.addEventListener('resize', checkOrientation);
 window.addEventListener('load', checkOrientation);
 window.addEventListener('orientationchange', checkOrientation);
+
+// Asegurarse de que la función también se ejecute cuando se cargue el script
+document.addEventListener('DOMContentLoaded', checkOrientation);
