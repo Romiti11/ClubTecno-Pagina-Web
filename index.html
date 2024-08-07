@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link href="css/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet" />
     <title>Document</title>
+    <style>
+        /* Mensaje para rotar la pantalla */
+        #rotate-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
     <div id="content" class="v34_2">
@@ -15,12 +28,29 @@
         <div class="v61_6"></div>
         <div class="v61_3"></div>
     </div>
-
-    <!-- Mensaje para rotar pantalla -->
+-- funcion para rotar pantalla
     <div id="rotate-message">
-        <p>Por favor gire su pantalla para una mejor visión!</p>
+        <p>por favor gire su pantalla para una mejor vision!</p>
     </div>
 
-    <script src="js/main.js"></script>
+    <script>
+        function checkOrientation() {
+            const content = document.getElementById('content');
+            const rotateMessage = document.getElementById('rotate-message');
+
+            if (window.innerHeight > window.innerWidth) {
+                // Si está en portrait, mostrar el mensaje
+                content.style.display = 'none';
+                rotateMessage.style.display = 'block';
+            } else {
+                // Si está en landscape, mostrar el contenido
+                content.style.display = 'block';
+                rotateMessage.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('resize', checkOrientation);
+        window.addEventListener('load', checkOrientation);
+    </script>
 </body>
 </html>
