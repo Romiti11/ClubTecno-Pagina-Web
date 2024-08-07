@@ -6,11 +6,12 @@
 
 body {
   font-size: 14px;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal no deseado */
 }
 
 .v34_2 {
   width: 100%;
-  height: 1024px;
+  height: auto; /* Ajustar automáticamente la altura según el contenido */
   background: rgba(255,255,255,1);
   opacity: 1;
   position: relative;
@@ -25,29 +26,24 @@ body {
   position: absolute;
   top: 30px;
   left: 10px;
-  overflow: hidden;
 }
 
-.v60_7 {
+.v60_7, .v61_6 {
   width: 100px;
   height: 100px;
   background: url("../images/v60_7.png") no-repeat center center/cover;
   opacity: 1;
   position: absolute;
+}
+
+.v60_7 {
   top: 206px;
   left: 66px;
-  overflow: hidden;
 }
 
 .v61_6 {
-  width: 100px;
-  height: 100px;
-  background: url("../images/v61_6.png") no-repeat center center/cover;
-  opacity: 1;
-  position: absolute;
   top: 354px;
   left: 66px;
-  overflow: hidden;
 }
 
 .v61_3 {
@@ -57,7 +53,20 @@ body {
   opacity: 1;
   position: absolute;
   top: 707px;
-  left: 0px;
+  left: 0;
+}
+
+#rotate-message {
+  display: none; /* Ocultar por defecto */
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Estilos específicos para landscape en móviles */
@@ -65,7 +74,6 @@ body {
     body {
         font-size: 18px;
         padding: 20px;
-        overflow-x: hidden;
     }
 
     .v34_2 {
