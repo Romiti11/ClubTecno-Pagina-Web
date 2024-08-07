@@ -40,8 +40,8 @@
         function checkOrientation() {
             const content = document.getElementById('content');
             const rotateMessage = document.getElementById('rotate-message');
-
-            const isPortrait = window.innerHeight > window.innerWidth;
+            
+            const isPortrait = window.matchMedia("(orientation: portrait)").matches;
 
             if (isPortrait) {
                 // Si está en portrait, mostrar el mensaje
@@ -54,9 +54,22 @@
             }
         }
 
-        window.addEventListener('resize', checkOrientation);
+        function forceRedraw() {
+            const body = document.body;
+            body.style.display = 'none';
+            body.offsetHeight; // forzar reflujo
+            body.style.display = 'block';
+        }
+
+        window.addEventListener('resize', () => {
+            checkOrientation();
+            forceRedraw();
+        });
         window.addEventListener('load', checkOrientation);
-        window.addEventListener('orientationchange', checkOrientation);
+        window.addEventListener('orientationchange', () => {
+            checkOrientation();
+            forceRedraw();
+        });
     </script>
 </body>
 </html>
