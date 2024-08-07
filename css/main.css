@@ -1,29 +1,27 @@
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .v4_2 {
   width: 100%;
-  height: auto; /* Ajusta la altura automáticamente */
+  height: 1024px; /* Puedes ajustar la altura según sea necesario */
   background: rgba(255, 255, 255, 1);
   opacity: 1;
   position: relative;
-  top: 0;
-  left: 0;
   overflow: hidden;
-  padding: 20px; /* Añade padding para no pegar el contenido a los bordes */
+  padding: 20px; /* Espaciado interno */
 }
 
 .v4_3 {
-  width: 80%;
-  max-width: 335px;
-  height: auto; /* Ajusta la altura automáticamente */
+  width: 335px;
+  height: 70px;
   background: url("../images/v4_3.png") no-repeat center center;
   background-size: cover;
   opacity: 1;
@@ -32,58 +30,151 @@ body {
   left: 10px;
 }
 
-.v4_4,
-.v4_5 {
-  width: 80%;
-  max-width: 100px;
-  height: auto; /* Ajusta la altura automáticamente */
-  background: url("../images/v4_4.png") no-repeat center center; /* Cambia a v4_5.png para .v4_5 */
+.v4_4 {
+  width: 100px;
+  height: 100px;
+  background: url("../images/v4_4.png") no-repeat center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
-}
-
-.v4_4 {
   top: 206px;
   left: 66px;
 }
 
 .v4_5 {
+  width: 100px;
+  height: 100px;
+  background: url("../images/v4_5.png") no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
   top: 354px;
   left: 66px;
 }
 
-/* Media queries para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .v4_3 {
-    width: 90%;
-    left: 5%; /* Ajusta la posición horizontal para centrar */
-  }
+/* SECCION RESPONSIVE */
+@media screen and (max-width: 980px) {
+    nav {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul {
+        display: block !important;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
 
-  .v4_4,
-  .v4_5 {
-    width: 90%;
-    left: 5%; /* Ajusta la posición horizontal para centrar */
-  }
+@media screen and (max-width: 700px) {
+    .sobremi .fila {
+        display: block;
+    }
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+    .skills .fila {
+        display: block;
+    }
+    .skills .fila .col {
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill {
+        width: 100%;
+    }
+    .curriculum .fila {
+        display: block;
+    }
+    .curriculum .fila .col {
+        width: 90%;
+    }
+    .curriculum .fila .derecha {
+        margin-left: 20px;
+    }
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img {
+        width: 100%;
+    }
+    .contacto .fila {
+        display: block;
+    }
+    .contacto .fila .col {
+        width: 100%;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .container {
+        padding: 0 10px;
+    }
+
+    .v4_2 {
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px; /* Reducir padding en pantallas más pequeñas */
+    }
+
+    .v4_3 {
+        width: 90%;
+        left: 5%; /* Centra horizontalmente */
+    }
+
+    .v4_4,
+    .v4_5 {
+        width: 90%;
+        left: 5%; /* Centra horizontalmente */
+    }
+
+    .v4_4 {
+        top: 150px; /* Ajusta la posición vertical */
+    }
+
+    .v4_5 {
+        top: 300px; /* Ajusta la posición vertical */
+    }
 }
 
 @media (max-width: 480px) {
-  .v4_3 {
-    width: 100%;
-    left: 0; /* Alinea al borde izquierdo */
-  }
+    .v4_3 {
+        width: 100%;
+        left: 0; /* Alinea al borde izquierdo */
+    }
 
-  .v4_4,
-  .v4_5 {
-    width: 100%;
-    left: 0; /* Alinea al borde izquierdo */
-  }
+    .v4_4,
+    .v4_5 {
+        width: 100%;
+        left: 0; /* Alinea al borde izquierdo */
+    }
 
-  .v4_4 {
-    top: 150px; /* Ajusta la posición vertical */
-  }
+    .v4_4 {
+        top: 150px; /* Ajusta la posición vertical */
+    }
 
-  .v4_5 {
-    top: 300px; /* Ajusta la posición vertical */
-  }
+    .v4_5 {
+        top: 300px; /* Ajusta la posición vertical */
+    }
 }
