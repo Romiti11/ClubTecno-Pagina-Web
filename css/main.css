@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.v4_2 {
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  padding: 20px; /* Espaciado para no pegar el contenido a los bordes */
+}
+
+.v4_3 {
+  width: 80%;
+  max-width: 335px;
+  height: auto; /* Ajusta la altura automáticamente */
+  background: url("../images/v4_3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+.v4_4,
+.v4_5 {
+  width: 80%;
+  max-width: 100px;
+  height: auto; /* Ajusta la altura automáticamente */
+  background: url("../images/v4_4.png"); /* Cambia a v4_5.png para .v4_5 */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  margin: 20px auto; /* Centra horizontalmente y añade margen */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .v4_3 {
+    width: 90%;
+  }
+
+  .v4_4,
+  .v4_5 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .v4_3 {
+    width: 100%;
+  }
+
+  .v4_4,
+  .v4_5 {
+    width: 100%;
+  }
+}
