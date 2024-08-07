@@ -69,6 +69,32 @@ body {
     .tablet {
         display: none;
     }
+    .v4_3 {
+  width: 200px;
+  height: 50px;
+  background: url("../images/v4_3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  overflow: hidden;
+}
+.v4_4 {
+  width: 50px;
+  height: 50px;
+  background: url("../images/v4_4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 206px;
+  left: 66px;
+  overflow: hidden;
+}
 }
 
 
