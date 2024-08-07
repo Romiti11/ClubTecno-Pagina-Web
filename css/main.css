@@ -1,12 +1,11 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-size: 14px;
-  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 .v4_2 {
@@ -15,8 +14,10 @@ body {
   background: rgba(255, 255, 255, 1);
   opacity: 1;
   position: relative;
+  top: 0;
+  left: 0;
   overflow: hidden;
-  padding: 20px; /* Espaciado para no pegar el contenido a los bordes */
+  padding: 20px; /* Añade padding para no pegar el contenido a los bordes */
 }
 
 .v4_3 {
@@ -26,7 +27,9 @@ body {
   background: url("../images/v4_3.png") no-repeat center center;
   background-size: cover;
   opacity: 1;
-  margin: 0 auto; /* Centra horizontalmente */
+  position: absolute;
+  top: 30px;
+  left: 10px;
 }
 
 .v4_4,
@@ -37,32 +40,50 @@ body {
   background: url("../images/v4_4.png") no-repeat center center; /* Cambia a v4_5.png para .v4_5 */
   background-size: cover;
   opacity: 1;
-  margin: 20px auto; /* Centra horizontalmente y añade margen */
+  position: absolute;
+}
+
+.v4_4 {
+  top: 206px;
+  left: 66px;
 }
 
 .v4_5 {
-  background: url("../images/v4_5.png") no-repeat center center;
+  top: 354px;
+  left: 66px;
 }
 
 /* Media queries para pantallas más pequeñas */
 @media (max-width: 768px) {
   .v4_3 {
     width: 90%;
+    left: 5%; /* Ajusta la posición horizontal para centrar */
   }
 
   .v4_4,
   .v4_5 {
     width: 90%;
+    left: 5%; /* Ajusta la posición horizontal para centrar */
   }
 }
 
 @media (max-width: 480px) {
   .v4_3 {
     width: 100%;
+    left: 0; /* Alinea al borde izquierdo */
   }
 
   .v4_4,
   .v4_5 {
     width: 100%;
+    left: 0; /* Alinea al borde izquierdo */
+  }
+
+  .v4_4 {
+    top: 150px; /* Ajusta la posición vertical */
+  }
+
+  .v4_5 {
+    top: 300px; /* Ajusta la posición vertical */
   }
 }
