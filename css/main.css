@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-size: 14px;
-  margin: 0;
-  padding: 0;
+  line-height: 1.5;
 }
 
 .v4_2 {
@@ -22,9 +23,7 @@ body {
   width: 80%;
   max-width: 335px;
   height: auto; /* Ajusta la altura automáticamente */
-  background: url("../images/v4_3.png");
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url("../images/v4_3.png") no-repeat center center;
   background-size: cover;
   opacity: 1;
   margin: 0 auto; /* Centra horizontalmente */
@@ -35,12 +34,14 @@ body {
   width: 80%;
   max-width: 100px;
   height: auto; /* Ajusta la altura automáticamente */
-  background: url("../images/v4_4.png"); /* Cambia a v4_5.png para .v4_5 */
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url("../images/v4_4.png") no-repeat center center; /* Cambia a v4_5.png para .v4_5 */
   background-size: cover;
   opacity: 1;
   margin: 20px auto; /* Centra horizontalmente y añade margen */
+}
+
+.v4_5 {
+  background: url("../images/v4_5.png") no-repeat center center;
 }
 
 /* Media queries para pantallas más pequeñas */
