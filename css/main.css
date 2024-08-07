@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-size: 14px;
 }
+
 .v4_2 {
   width: 100%;
   height: 1024px;
@@ -14,6 +16,7 @@ body {
   left: 0px;
   overflow: hidden;
 }
+
 .v4_3 {
   width: 335px;
   height: 70px;
@@ -27,6 +30,7 @@ body {
   left: 10px;
   overflow: hidden;
 }
+
 .v4_4 {
   width: 100px;
   height: 100px;
@@ -40,6 +44,7 @@ body {
   left: 66px;
   overflow: hidden;
 }
+
 .v4_5 {
   width: 100px;
   height: 100px;
@@ -54,13 +59,14 @@ body {
   overflow: hidden;
 }
 
+/** Resolutions **/
+
 .resolucion {
     width: 99%;
     text-align: center;
 }
 
-
-/**Movil**/
+/** Mobile **/
 
 @media (max-width: 767px) {
     .desktop {
@@ -71,8 +77,7 @@ body {
     }
 }
 
-
-/**Tablet**/
+/** Tablet **/
 
 @media (min-width: 768px) and (max-width: 990px) {
     .desktop {
@@ -83,8 +88,7 @@ body {
     }
 }
 
-
-/**Escritorio**/
+/** Desktop **/
 
 @media (min-width: 991px) {
     .tablet {
