@@ -16,6 +16,7 @@ function checkOrientation() {
     }
 }
 
+// Ejecutar la función al cargar la página y al cambiar el tamaño/orientación
 window.addEventListener('resize', checkOrientation);
 window.addEventListener('load', checkOrientation);
 window.addEventListener('orientationchange', checkOrientation);
