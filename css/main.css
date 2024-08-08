@@ -128,6 +128,9 @@ body {
 
 /**Tablet**/
 
+/* Estilos para pantallas en modo horizontal */
+@media screen and (orientation: landscape) {
+
 @media (min-width: 768px) and (max-width: 990px) {
     .desktop {
         display: none;
