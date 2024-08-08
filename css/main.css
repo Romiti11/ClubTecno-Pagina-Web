@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v1_4 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v9_16 {
+  width: 468px;
+  height: 469px;
+  background: url("../images/v9_16.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 43px;
+  left: 478px;
+  overflow: hidden;
+}
+.v9_26 {
+  width: 796px;
+  height: 157px;
+  background: url("../images/v9_26.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 539px;
+  left: 311px;
+  overflow: hidden;
+}
+.v9_22 {
+  width: 168px;
+  height: 40px;
+  background: url("../images/v9_22.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 44px;
+  left: 231px;
+  overflow: hidden;
+}
+.v9_51 {
+  width: 171px;
+  height: 40px;
+  background: url("../images/v9_51.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 44px;
+  left: 60px;
+  overflow: hidden;
+}
+.v9_23 {
+  width: 181px;
+  height: 40px;
+  background: url("../images/v9_23.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 44px;
+  left: 401px;
+  overflow: hidden;
+}
+.v9_24 {
+  width: 175px;
+  height: 40px;
+  background: url("../images/v9_24.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 44px;
+  left: 582px;
+  overflow: hidden;
+}
+.v37_2 {
+  width: 100%;
+  height: 60px;
+  background: rgba(0,212,182,1);
+  opacity: 1;
+  position: absolute;
+  top: 965px;
+  left: 0px;
+  overflow: hidden;
+}
+
+
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+   
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
