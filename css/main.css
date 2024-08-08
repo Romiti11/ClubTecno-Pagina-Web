@@ -24,72 +24,60 @@ body {
   opacity: 1;
   position: absolute;
   top: 43px;
-  left: 478px;
+  left: 750px;
   overflow: hidden;
 }
-.v9_26 {
-  width: 796px;
-  height: 157px;
-  background: url("../images/v9_26.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 539px;
-  left: 311px;
-  overflow: hidden;
-}
+
 .v9_22 {
-  width: 168px;
-  height: 40px;
+  width: 250px;
+  height: 60px;
   background: url("../images/v9_22.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 44px;
-  left: 231px;
+  top: 650px;
+  left: 650px;
   overflow: hidden;
 }
 .v9_51 {
-  width: 171px;
-  height: 40px;
+  width: 250px;
+  height: 60px;
   background: url("../images/v9_51.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 44px;
-  left: 60px;
+  top: 650px;
+  left: 350px;
   overflow: hidden;
 }
 .v9_23 {
-  width: 181px;
-  height: 40px;
+  width: 250px;
+  height: 60px;
   background: url("../images/v9_23.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 44px;
-  left: 401px;
+  top: 650px;
+  left: 950px;
   overflow: hidden;
 }
 .v9_24 {
-  width: 175px;
-  height: 40px;
+  width: 250px;
+  height: 60px;
   background: url("../images/v9_24.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 44px;
-  left: 582px;
+  top: 650px;
+  left: 1250px;
   overflow: hidden;
 }
 .v37_2 {
@@ -112,24 +100,17 @@ body {
 
 /**Movil**/
 
-/* Estilos para pantallas en modo horizontal */
-@media screen and (orientation: landscape) {
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     .desktop {
         display: none;
     }
     .tablet {
         display: none;
     }
-   
-}
 }
 
 
 /**Tablet**/
-
-/* Estilos para pantallas en modo horizontal */
-@media screen and (orientation: landscape) {
 
 @media (min-width: 768px) and (max-width: 990px) {
     .desktop {
