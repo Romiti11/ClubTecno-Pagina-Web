@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v34_2 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v34_3 {
+  width: 285px;
+  height: 66px;
+  background: url("../pagina contactos/v9_46.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 57px;
+  left: 0px;
+  overflow: hidden;
+}
+.v56_2 {
+  width: 70px;
+  height: 70px;
+  background: url("../pagina sobre nosotros images/v56_2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  left: 1200px;
+  overflow: hidden;
+}
+.v60_7 {
+  width: 100px;
+  height: 100px;
+  background: url("../pagina contactos/v60_7.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  overflow: hidden;
+}
+.v61_6 {
+  width: 100px;
+  height: 100px;
+  background: url("../pagina contactos/v61_6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 300px;
+  left: 40px;
+  overflow: hidden;
+}
+.v61_3 {
+  width: 100%;
+  height: 320px;
+  background: rgba(156,155,197,0.30000001192092896);
+  opacity: 1;
+  position: absolute;
+  top: 700px;
+  left: 0px;
+}
+
+.resolucion {
+  width: 99%;
+  text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+  .desktop {
+      display: none;
+  }
+  .tablet {
+      display: none;
+  }
+  .v34_3 {
+    width: 155px;
+    height: 40px;
+    background: url("../pagina contactos/v9_46.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    overflow: hidden;
+  }
+  .v60_7 {
+    width: 50px;
+    height: 50px;
+    background: url("../pagina contactos/v60_7.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    overflow: hidden;
+  }
+  .v61_6 {
+    width: 50px;
+    height: 50px;
+    background: url("../pagina contactos/v61_6.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 200px;
+    left: 45px;
+    overflow: hidden;
+  }
+  .v56_2 {
+    width: 50px;
+    height: 50px;
+    background: url("../pagina sobre nosotros images/v56_2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    overflow: hidden;
+  }
+  
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .desktop {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+  .tablet {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+}
