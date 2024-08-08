@@ -112,7 +112,9 @@ body {
 
 /**Movil**/
 
-@media (max-width: 767px) {
+/* Estilos para pantallas en modo horizontal */
+@media screen and (orientation: landscape) {
+  @media (max-width: 767px) {
     .desktop {
         display: none;
     }
@@ -120,6 +122,7 @@ body {
         display: none;
     }
    
+}
 }
 
 
