@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ClubTecno">
+    <meta name="robots" content="index,follow">
+
+    <title>ClubTecno</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css">
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (max-width: 760px)">
+
+    <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 980px)">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/logoct.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container--loader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <img src="./assets/images/logoct.png" alt="Logo ClubTecno" class="logo__header">
+
+        <nav class="nav_menu not-active">
+            <a href="#sobreMi" data-section="menu" data-value="item2">Sobre Nosotros</a>
+            <a href="clases.html" data-section="menu" data-value="item3">Clases</a>
+            <a href="eventos.html" data-section="menu" data-value="item4">Eventos</a>
+            <!-- <a href="#proyectos" data-section="menu" data-value="item5">Proyectos</a> -->
+            <a href="#contacto" data-section="menu" data-value="item6">Contactos</a>
+            <a href="https://clubtecnobot.online/micuenta" data-section="menu" data-value="item6">Mi Cuenta</a>
+
+        </nav>
+
+        <div id="button" class="btn not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section class="home" id="home">
+            <picture class="container_image-home" data-aos="zoom-in">
+                <img class="image_home" src="./assets/images/image-home.png" alt="Ilustración">
+            </picture>
+            <a href="chatbot.html" data-section="ChatBot" data-value="item6">
+                <a href="https://api.whatsapp.com/send?phone=5493416444778" target="_blank">
+                    <img src="assets/images/whatsapp.png" alt="ChatBot" class="chatbot-icon" />
+                </a>
+
+            </a>
+
+        </section>
+
+        <!-- Sobre Nosotros -->
+        <section class="sobreMi" id="sobreMi">
+            <h1 data-section="sobre-mi" data-value="title" data-aos="fade-up">Sobre Nosotros</h1>
+
+            <div class="container_texto-sobreMi">
+                <!--  <span class="title_sobreMi">ClubTecno</span>-->
+                <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">
+            En Club Tecno, el objetivo es potenciar las habilidades y talentos de cada persona, adaptándonos a sus necesidades y estilos de aprendizaje. A través de la integración del arte, la tecnología y la robótica, buscamos ofrecer un espacio dinámico y creativo donde aprender es una experiencia divertida y significativa.
+Aquí se enseña programación, el uso de sensores, construcción con bloques tecnológicos y mucho más, fomentando el pensamiento lógico, la creatividad y el trabajo en equipo. El aprendizaje activo es el eje central, invitando a niños, jóvenes y adultos a ser protagonistas de su propio desarrollo.
+Nuestro compromiso es acompañar a cada estudiante en el camino de descubrir nuevas habilidades, preparar su presente y abrir puertas para el futuro, siempre disfrutando y explorando con entusiasmo.
+        </span>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto" id="contacto">
+            <h1 data-section="contacto" data-value="title" data-aos="fade-up">Contacto</h1>
+
+            <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+
+                <div class="container--contacto">
+                    <div class="container_text--contacto">
+                        <p data-section="contacto" data-value="text">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+                    </div>
+
+                    <form id="form" class="form-contact" name="contacto-portafolio" netlify>
+                        <input id="nombre" type="text" name="name" placeholder="Nombre | Name" required>
+                        <input id="email" type="email" name="email" placeholder="E-mail" required>
+                        <input id="asunto" type="text" name="affair" placeholder="Asunto | Subject" required>
+                        <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje | Message" required></textarea>
+
+                        <div class="btn_form--contacto">
+                            <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contianer--footer">
+            <div class="container_redes-footer">
+                <a href="https://www.instagram.com/clubtecno_/?hl=es-la" target="_blank">
+                    <img src="./assets/images/instagram.png" alt="Instagram"">
+                </a>
+            </div>
+
+            <div class="container_text--footer">
+                <span>Copyright © | Coded with</span>
+                <span>by</span>
+                <span>Juan Bautista Romiti</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
