@@ -397,6 +397,43 @@ span+span {
     margin-top: 2px;
 }
 
+.funcionamiento {
+    background: #fff;
+    padding: 60px 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.funcionamiento h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.func-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.func-list li {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.func-list li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+}
+
 
 /* Sobre mí */
 
